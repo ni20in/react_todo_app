@@ -83,7 +83,7 @@ const Home = () => {
       .catch((e) => {
         toast.error(e.response.data.message);
       });
-  }, [refresh]);
+  }, []);
 
   if (!isAuthenticated) return <Navigate to={"/login"} />;
 
